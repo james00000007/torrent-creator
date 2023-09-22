@@ -271,15 +271,12 @@ label
 
 <div id="error_text" style="display: none; font-size: 25px; color: #ff3d58; margin-left: 20px; margin-bottom: 20px; white-space: pre-line;"></div>
 
-<div id="progressbar_container" class="progress-bar-hidden" style="margin-left: 20px; border: 2px solid #bcbcbc; border-radius: 5px; width: calc(100% - 50px); position: relative;">
-    <div id="progressbar" style="background: #23b235; width: 0%; height: 100%; border-radius: 3px;"></div>
-    <div id="progressbar_text" style="display:block; position: absolute; bottom: 4px; font-size: 25px; padding-bottom: 2px; padding-left: 6px; text-shadow: 2px 2px 5px blue;"></div>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
 </div>
 
-<div id="progressbar_processing_container" class="progress-bar-hidden"
-    style="margin-left: 20px; margin-top: 6px; border: 2px solid #bcbcbc; border-radius: 5px; width: calc(100% - 50px); position: relative;">
-    <div id="progressbar_processing" style="background: #23b235; width: 0%; height: 100%; border-radius: 3px;"></div>
-    <div id="progressbar_processing_text" style="display:block; position: absolute; bottom: 4px; font-size: 25px; padding-bottom: 2px; padding-left: 6px; text-shadow: 2px 2px 5px blue;"></div>
+<div class="progress">
+  <div class="progress-bar progress-bar-animated bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 
 <button id="create_torrent_button" style="display: grid; margin: 20px 0px 0px 20px; width: calc(100% - 46px); max-width: 600px; height: 100px; font-size: 50px; line-height: 80px;"
