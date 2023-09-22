@@ -352,11 +352,11 @@ function Failed(fileName, err) {
 function Cancel() {
     creationInProgress = false;
     document.getElementById("create_torrent_button").textContent = "Create torrent";
-    document.getElementById("progressbar_container").className = "progress-bar progress-bar-animated bg-success";
-    document.getElementById("progressbar_processing_container").className = "progress-bar progress-bar-animated bg-success";
+    document.getElementById("progressbar_container").className = "progress-bar-hidden";
+    document.getElementById("progressbar_processing_container").className = "progress-bar-hidden";
     document.getElementById("progressbar_text").textContent = "";
     document.getElementById("progressbar").style.width = "0%";
-    document.getElementById("progressbar_processing_container").className = "progress-bar progress-bar-animated bg-success";
+    document.getElementById("progressbar_processing_container").className = "progress-bar-hidden";
     document.getElementById("progressbar_processing_text").textContent = "";
     document.getElementById("progressbar_processing").style.width = "0%";
     DisableElements(false);
