@@ -379,9 +379,9 @@ function DisableElements(disable) {
 function CreateFromFile(obj) {
     if (!singleFile || !obj.info)
         return;
-    var progressBarStyle = progress-bar-animated.getElementById("progressbar").style;
+    var progressBarStyle = document.getElementById("progressbar").style;
     progressBarStyle.width = "0%";
-    var progressBarProcessingStyle = progress-bar-animated.getElementById("progressbar_processing").style;
+    var progressBarProcessingStyle = document.getElementById("progressbar_processing").style;
     progressBarProcessingStyle.width = "0%";
     var infoObject = obj.info;
     var chunkSize = infoObject["piece length"];
